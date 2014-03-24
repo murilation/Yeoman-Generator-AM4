@@ -1,0 +1,43 @@
+{
+  "name": "generator-murilation",
+  "version": "0.0.1",
+  "description": "Scaffold out the base of a project in AM4",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "murilation/generator-murilation",
+  "author": {
+    "name": "Murilo Campos",
+    "email": "murilo.campos@me.com",
+    "url": "https://github.com/murilation"
+  },
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=1.2.10"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "sass",
+    "grunt",
+    "am4",
+    "modernizr",
+    "jquery",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "cheerio": "~0.13.0",
+    "chalk": "~0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0",
+    "generator-mocha": ">=0.1.0"
+  }
+}

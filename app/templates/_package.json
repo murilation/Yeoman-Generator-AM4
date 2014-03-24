@@ -1,0 +1,24 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+  	"grunt": "~0.4.1",
+  	<% if (includeConcat) { %>
+    "grunt-contrib-concat": "~0.3.0",
+    <% } if (includeUglify) { %>
+    "grunt-contrib-uglify": "*",
+    <% } if (includeImgMin) { %>
+    "grunt-contrib-imagemin": "*",
+    <% } if (includeSass) { %>
+    "grunt-contrib-sass": "*",
+    <% } if (includeCSSmin) { %>
+    "grunt-contrib-cssmin": "*",
+    <% } if (includeWatch) { %>
+    "grunt-contrib-watch": "*"
+    <% } %>
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

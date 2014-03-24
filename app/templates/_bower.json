@@ -1,0 +1,23 @@
+{
+  "name": "<%= _.slugify(appname) %>",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+  	<% if (includeMaskedInput) { %>
+  		"jquery-maskedinput": "*",
+  	<% } if (includeShiv) { %> 
+  		"html5shiv": "*",
+  	<% } if (includejQueryMobile) { %>
+  		"jquery-mobile": "*",
+  	<% } if (includeModernizr) { %>
+  		"modernizr": "~2.6.2",
+  	<% } if (includeMalihuScrollbars) { %>
+  		"malihu-custom-scrollbar-plugin": "*",
+  	<% } if (includeColorbox) { %>
+  		"colorbox": "*",
+  	<% } if (includejQuery) { %>
+  		"jquery": "~1.11.0"
+  	<% } %>
+  }
+}
+
